@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add To Cart </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1> Audiofy </h1>
+            <div class="cartIconBox">
+                <i class="fa-solid fa-cart-shopping" onclick="showCart()"></i>
+                <span class="Cartnum"> 0 </span>
+            </div>
+           
+        </nav>
+        <div class="productContainer">
+            <!-- <div class="productBox">
+                <img src="./headphone1.png" alt="headphone" />
+                <div class="priceBox">
+                    <h1> HeadPhone </h1>
+                    <h2> RS.500 </h2>
+                </div>
+                <button> Add To Cart </button>
+                <span class="tag"> Electronics  </span>
+            </div> -->
+        </div>
+        <!-------------------------- Cart Box ------------------------------->
+        <div class="cartBox">
+            <div class="cartHeader">
+                <h1> Cart Items </h1>
+                <i class="fa-solid fa-xmark" onclick="hideCart()"></i>
+            </div>
+            
+            <div class="cartProductsContainer">
+
+            </div>
+           
+            <div class="totalPrice">
+                <h2> Total Pice </h2>
+                <h2 id="totalCost"> 0 </h2>
+            </div>
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
